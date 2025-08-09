@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B-Hive Restaurant Website with Fixed Navigation and Media Queries</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==================== Navigation Section ==================== -->
+  <section class="navigation-section">
+  <div class="nav">
+    <div class="logo-circle">
+      <img src="images/b-hive-logo.png" alt="Logo" style="height: 70px;"/>
+    </div>
+    <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="event.html">Events</a></li>
+     
+      <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+  </div>
+</section>
+
+  <!-- ==================== Hero Section ==================== -->
+ <section class="hero-section" id="home">
+  <div class="hero">
+    
+    <!-- ✨ Left Side Text Box -->
+    <div class="hero-text" id="heroText">
+      <h1 class="buzz-heading">Experience the Buzz at the Best Pub in Koramangala</h1>
+      <p class="buzz-subtext">Let the weekend come alive at B Hive Pub and Lounge Bar
+ </p>
+    </div>
+
+    <!-- ✅ Right Side Form -->
+   <form class="reservation-form-right" id="reservation-form-right">
+  <h3>Book a Table</h3>
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="tel" name="phone" placeholder="Phone Number" required />
+
+  <select name="guests" required>
+    <option value="">Select Guests</option>
+    <option>1 Guest</option>
+    <option>2 Guests</option>
+    <option>3 Guests</option>
+    <option>4+ Guests</option>
+  </select>
+
+  <div class="date-time-row">
+    <input type="date" name="date" required />
+    <input type="time" name="time" required />
+  </div>
+
+  <button type="submit" class="submit-btn">Reserve</button>
+</form>
+ 
+  </div>
+</section>
+
+
+
+
+  <!-- ==================== Highlights Section ==================== -->
+ <section class="highlights-section">
+  <div class="section-heading">
+    <h2>Our Highlights</h2>
+    <p>What makes B-Hive unforgettable</p>
+  </div>
+
+  <div class="content-grid">
+    <!-- Row 1: Image Left, Text Right -->
+    <div class="grid-item">
+      <div class="grid-inner">
+        <img src="images/DSC08044_11zon.jpg" alt="Multifloor Party" class="grid-img">
+        <div class="grid-text">
+          <h3>Can’t decide between a chill dinner or a wild night out?</h3>
+          <p>No worries, we’ve got you covered! B-hive Lounge and Roots Restaurant are two completely different vibes under one roof. Feel like fine dining? Head to Roots for a flavour-packed journey. Want to switch it up mid-meal and hit the pub instead? Just walk a few steps to B hive and dive into the buzz! Whether you're feeling classy or a little bit crazy, you’ve got the freedom to flip the script, no judgment, no extra travel, just options.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Image Left, Text Right -->
+    <div class="grid-item">
+      <div class="grid-inner">
+        <img src="images/DSC08092_11zon.jpg" alt="Redefining Nightlife" class="grid-img">
+        <div class="grid-text">
+          <h3>Got Weekend Plans Yet?</h3>
+          <p>If not, we’ve got just the place that turns ordinary weekends into epic memories. Welcome to B Hive Pub and Lounge Bar, the ultimate pub in Koramangala, where your search for nightlife and party places ends. Spread across five creatively designed floors. This is not just one of the best pubs in Koramangala; it’s a weekend lifestyle you’ll want to come back to.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#reservation-form-right" class="intro-ccta">Schedule Your Visit</a>
+  </div>
+</section>
+
+
+
+  <!-- ==================== Nightlife Section ==================== -->
+  <section class="nightlife-section">
+    <h2>Experience the Vibe</h2>
+    <div class="top-row">
+      <img src="images/IMG-20250728-WA0017_11zon.jpg" alt="Nightlife 1">
+      <img src="images/IMG-20250728-WA0018_11zon.jpg" alt="Nightlife 2">
+      <img src="images/IMG-20250728-WA0019_11zon.jpg" alt="Nightlife 3">
+    </div>
+    <a href="#hero-contact-form" class="intro-ccta">Schedule Your Visit</a>
+  </section>
+
+  <!-- ==================== Gallery Section ==================== -->
+  <section class="gallery-section">
+    <h2>Our Gallery</h2>
+    <div class="masonry-grid">
+      <img src="images/DSC07954_11zon.jpg" class="grid-item tall" alt="Image 1">
+      <img src="images/DSC08122_11zon.jpg" class="grid-item" alt="Image 2">
+      <img src="images/DSC08424_11zon.jpg" class="grid-item" alt="Image 3">
+      <img src="images/DSC08443_11zon.jpg" class="grid-item" alt="Image 4">
+      <img src="images/DSC08111_11zon.jpg" class="grid-item tall" alt="Image 5">
+      <img src="images/DSC08115_11zon.jpg" class="grid-item" alt="Image 6">
+      <img src="images/DSC08433_11zon.jpg" class="grid-item" alt="Image 7">
+    </div>
+    <a href="#reservation-form-right" class="intro-ccta">Schedule Your Visit</a>
+  </section>  
+
+  <section id="contact"> <!-- Optional: ID to match nav link -->
+  <!-- Paste the reservation + testimonials HTML content here -->
+
+ 
+    
+    <div class="container">
+        <div class="reservation-testimonials-wrapper">
+          <!-- Left Side - Reservation Form -->
+          <div class="reservation-section" style="margin-top: 60px;">
+            <div class="form-container">
+                <h1>Make a Reservation</h1>
+                <p class="subtitle">Book your table for an unforgettable dining experience</p>
+                
+                <form id="reservationForm" class="reservation-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                    </div>
+                    
+                  
+                    
+                    <div class="form-section">
+                        <h3>Choose Date/Time</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="occasion">Select Occasion *</label>
+                        <select id="occasion" name="occasion">
+                            <option value="">Select an occasion</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="corporate">Corporate</option>
+                            <option value="romantic">Romantic Dinner</option>
+                        </select>
+                    </div>
+                    
+                  
+                    
+                    <button type="submit" class="submit-btn">Book Reservation</button>
+                </form>
+            </div>
+          </div>
+          
+          <!-- Right Side - Testimonials -->
+          <div class="testimonials-section" style="margin-top: 60px;">
+            <h2>What Our Guests Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Nice place to enjoy with friends. Food is really good and service too. The location is fine however I feel a little congested. The dance floor is cherry on cake. The price is also moderate."</p>
+                    <div class="testimonial-author">justin antony</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Had a very Good Experience here. The service was very nice. The offers for special drinks Buy one Get one free was also really satisfying."</p>
+                    <div class="testimonial-author">Sooraj TJ</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Awesome food and ambience is really good. You need experience once.
+Valet parking is available, don't need to worry about the car parking.
+Less waiting time."</p>
+                    <div class="testimonial-author">Chandan Bhuiya</div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        
+   
+</section>
+  
+<section class="facts-section" id="facts">
+  <h2 class="facts-heading">Facts & Figures</h2>
+  <div class="facts-grid">
+    <div class="fact-card">
+      <p class="fact-number" data-target="10">0</p>
+      <p class="fact-text">Years of Serving Unforgettable Nights</p>
+    </div>
+    <div class="fact-card">
+      <p class="fact-number" data-target="15">0</p>
+      <p class="fact-text">Professional DJs and Artists Rotating Every Month</p>
+    </div>
+    <div class="fact-card">
+      <p class="fact-number" data-target="5">0</p>
+      <p class="fact-text">Floors of Dining, Lounge</p>
+    </div>
+    <div class="fact-card">
+      <p class="fact-number" data-target="25">0</p>
+      <p class="fact-text">Curated Cocktails & Premium Beverages on the Menu</p>
+    </div>
+    <div class="fact-card">
+      <p class="fact-number" data-target="200">0</p>
+      <p class="fact-text">Successful Private Events & Corporate Parties Hosted</p>
+    </div>
+   
+  </div>
+   <a href="#reservation-form-right" class="intro-ccta">Schedule Your Visit</a>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-description">
+      <h2>Looking for the perfect blend of dining, music, and ambiance?</h2>
+      <p>
+        <strong>BHIVE</strong> delivers an experience that goes beyond expectations. Celebrate under the stars, sip a cocktail with a sunset view, or lose yourself on the dance floor. Call us now or click below to reserve your spot. Weekends get booked fast at one of the best pubs in Bangalore.<br>
+        <strong>BHIVE – Where Koramangala Comes Alive.</strong>
+      </p>
+      <a href="#reservation-form-right" class="footer-reserve-btn">Book Your Party</a>
+    </div>
+    
+    <div class="footer-contact">
+      <h3>Contact Details</h3>
+      <ul>
+        <li><strong>Phone:</strong> +91 (80) 41711119, +91 (80) 41711118, +91 (80) 25521117, +91 9606257272</li>
+        <li><strong>Email:</strong> <a href="mailto:b_hive@b-hivepub.in">b_hive@b-hivepub.in</a></li>
+        <li><strong>Location:</strong> 43/A 1st main road, 1st Block, Near Wipro Park, Jakkasandra Road, Koramangala, Bangalore - 560034</li>
+      </ul>
+
+      <!-- Social Media Icons -->
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)">
+          <!-- X Logo SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="currentColor" width="16" height="16">
+            <path d="M714.163 519.284L1160.89 0H1050.3L668.007 442.54L356.41 0H0l470.993 684.765L0 1226.82h110.59l407.2-471.542L843.59 1226.82H1200L714.163 519.284zM565.83 686.085l-47.167-67.333L152.747 80h165.04l300.326 428.492 47.167 67.333 384.964 549.757H885.203L565.83 686.085z"/>
+          </svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 BHIVE. All rights reserved.
+  </div>
+</footer>
+
+<!-- Font Awesome Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <!-- ==================== Script ==================== -->
+  <script src="script.js"></script>
+
+  <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  (function() {
+    emailjs.init("JEkbnfOA5RJHuy1Lc"); // Replace with your actual EmailJS public key
+  })();
+
+  // Reservation form submission
+  const form = document.getElementById("reservation-form-right");
+  const button = form.querySelector("button");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    button.textContent = "Sending...";
+    button.disabled = true;
+
+    emailjs.sendForm("service_zpl25yd", "template_wl2oulg", this)
+      .then(() => {
+        alert("✅ Reservation sent successfully!");
+        form.reset();
+      }, (error) => {
+        alert("❌ Failed to send reservation. Please try again.");
+        console.error("EmailJS Error:", error);
+      })
+      .finally(() => {
+        button.textContent = "Book Reservation";
+        button.disabled = false;
+      });
+  });
+</script>
+
+</body>
+</html>
