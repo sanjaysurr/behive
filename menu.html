@@ -3,151 +3,671 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Hive Menu Card</title>
     <link rel="stylesheet" href="menu.css" />
 </head>
 <body>
     <section class="navigation-section">
-  <div class="nav">
-    <div class="logo-circle">
-      <img src="images/b-hive-logo.png" alt="Logo" style="height: 70px;"/>
-    </div>
-    <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="event.html">Event</a></li>
-    </ul>
-  </div>
-</section>
+        <div class="nav">
+            <div class="logo-circle">
+                <img src="images/b-hive-logo.png" alt="Logo" style="height: 70px;"/>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="event.html">Event</a></li>
+            </ul>
+        </div>
+    </section>
 
-<!-- Menu Hero Section -->
-<section class="menu-hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Food & Drinks at BHIVE</h1>
-      <p class="hero-subtitle">Where every dish tells a story, and every drink creates a memory</p>
-    </div>
-  </div>
-</section>
+    <!-- Menu Hero Section -->
+    <section class="menu-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Food & Drinks at BHIVE</h1>
+                <p class="hero-subtitle">Where every dish tells a story, and every drink creates a memory</p>
+            </div>
+        </div>
+    </section>
 
-<!-- Menu Introduction -->
-<section class="menu-intro">
-  <div class="container">
-    <div class="intro-content">
-      <p>
-        At BHIVE, food is not an afterthought — it's the foundation of the entire experience. 
-        We believe your taste buds deserve as much attention as your playlist.
-      </p>
-      <p>
-        Our menu is a celebration of cultures, flavors, and innovation — perfectly aligned 
-        with the diverse crowd we host every day. That's what makes BHIVE a hotspot for 
-        nightlife.
-      </p>
-    </div>
-  </div>
-</section>
+    <!-- Menu Introduction -->
+    <section class="menu-intro">
+        <div class="container">
+            <div class="intro-content">
+                <p>
+                    At BHIVE, food is not an afterthought — it's the foundation of the entire experience. 
+                    We believe your taste buds deserve as much attention as your playlist.
+                </p>
+                <p>
+                    Our menu is a celebration of cultures, flavors, and innovation — perfectly aligned 
+                    with the diverse crowd we host every day. That's what makes BHIVE a hotspot for 
+                    nightlife.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<!-- Menu Categories -->
-<section class="menu-categories">
-  <div class="container">
-    
-    <!-- Drinks & Cocktails -->
-    <div class="menu-category">
-      <div class="category-header">
-        <h2>Drinks & Cocktails</h2>
-        <div class="category-icon">🍸</div>
-      </div>
-      <div class="category-content">
-        <p>
-          Explore an extensive collection of beverages that reflect international mixology 
-          trends with a local twist. From smoky whiskey-based classics to zesty fruit-forward 
-          mocktails, our bar team brings artistry to every glass. Try our signature mixes, 
-          seasonal infusions, and bar bites curated to enhance every sip.
-        </p>
-      </div>
-    </div>
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <div class="container">
+            <!-- Drinks & Cocktails -->
+            <div class="menu-category">
+                <div class="category-header">
+                    <h2>Drinks & Cocktails</h2>
+                    <div class="category-icon">🍸</div>
+                </div>
+                <div class="category-content">
+                    <p>
+                        Explore an extensive collection of beverages that reflect international mixology 
+                        trends with a local twist. From smoky whiskey-based classics to zesty fruit-forward 
+                        mocktails, our bar team brings artistry to every glass. Try our signature mixes, 
+                        seasonal infusions, and bar bites curated to enhance every sip.
+                    </p>
+                    <div class="menu-items">
+                        <div class="menu-subcategory">
+                            <h3>Single Malt</h3>
+                            <div class="menu-item"><span>Glenmorangie 10Yo</span><span class="price">₹569.00</span></div>
+                            <div class="menu-item"><span>Laphroaig 10Yo</span><span class="price">₹649.00</span></div>
+                            <div class="menu-item"><span>Taliskar 10Yo</span><span class="price">₹569.00</span></div>
+                            <div class="menu-item"><span>The Glenlivet 12Yo</span><span class="price">₹709.00</span></div>
+                            <div class="menu-item"><span>Glenfiddich 12Yo</span><span class="price">₹709.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Deluxe Scotch</h3>
+                            <div class="menu-item"><span>Johnnie Walker Black Label 12Yo</span><span class="price">₹419.00</span></div>
+                            <div class="menu-item"><span>Chivas Regal 12Yo</span><span class="price">₹419.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Premium Scotch</h3>
+                            <div class="menu-item"><span>Teachers 50 12Yo</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Black Dog 12YO</span><span class="price">₹279.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Regular Scotch</h3>
+                            <div class="menu-item"><span>Johnnie Walker Red Label</span><span class="price">₹279.00</span></div>
+                            <div class="menu-item"><span>Teachers Highland Cream</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Black & White</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>100 Pipers</span><span class="price">₹199.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Whiskey</h3>
+                            <div class="menu-item"><span>Jack Daniels (Tennessee Whiskey)</span><span class="price">₹359.00</span></div>
+                            <div class="menu-item"><span>Jim Beam White Label (Kentucky Straight Bourbon)</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Canadian Club (Canadian Whiskey)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Jameson (Irish Whiskey)</span><span class="price">₹279.00</span></div>
+                            <div class="menu-item"><span>Mcdowells Signature (Domestic Whiskey)</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Antiquity Blue (Domestic Whiskey)</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Blenders Pride (Domestic Whiskey)</span><span class="price">₹149.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Vodka</h3>
+                            <div class="menu-item"><span>Belvedere (Deluxe Premium)</span><span class="price">₹469.00</span></div>
+                            <div class="menu-item"><span>Grey Goose (Deluxe Premium)</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Finlandia (Premium)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Absolute (Premium)</span><span class="price">₹279.00</span></div>
+                            <div class="menu-item"><span>Absolute Mandrin (Premium)</span><span class="price">₹279.00</span></div>
+                            <div class="menu-item"><span>Smirnoff (Domestic)</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Smirnoff Espresso (Domestic)</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Smirnoff Green Apple (Domestic)</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Smirnoff Orange (Domestic)</span><span class="price">₹149.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Gin</h3>
+                            <div class="menu-item"><span>Bombay Sapphire (Premium)</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Gordon's (Premium)</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Blue Riband (Domestic)</span><span class="price">₹129.00</span></div>
+                            <div class="menu-item"><span>Gig Gin (Domestic)</span><span class="price">₹159.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Rum</h3>
+                            <div class="menu-item"><span>Old Monk (Domestic)</span><span class="price">₹129.00</span></div>
+                            <div class="menu-item"><span>Bacardi Black (Domestic)</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Bacardi Carta Blanca (Domestic)</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Bacardi Lemon (Domestic)</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Captain Morgan (Domestic)</span><span class="price">₹129.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Cognac & Brandy</h3>
+                            <div class="menu-item"><span>Hennessy VS (Cognac)</span><span class="price">₹699.00</span></div>
+                            <div class="menu-item"><span>Mansion House (Brandy)</span><span class="price">₹129.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Agave Spirits</h3>
+                            <div class="menu-item"><span>Tequila Silver</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Tequila Gold</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Desmondji</span><span class="price">Price not available</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Shots & Bombs</h3>
+                            <div class="menu-item"><span>Kamikaze</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Iced Shots</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Flat Liner</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Brain Haemorrhage</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Beer Bomb</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Jager Bomb</span><span class="price">₹499.00</span></div>
+                            <div class="menu-item"><span>Lets Go Naughty</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Flaming Lamborghini</span><span class="price">₹599.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Flavoured Spirits</h3>
+                            <div class="menu-item"><span>Campari</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Kahlua</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Malibu</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Baileys Irish Cream</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Cointreau</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Jagermeister</span><span class="price">₹379.00</span></div>
+                            <div class="menu-item"><span>Molinari Sambuca</span><span class="price">₹289.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Flaming & Chasing</h3>
+                            <div class="menu-item"><span>B-52</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Water Fall</span><span class="price">₹549.00</span></div>
+                            <div class="menu-item"><span>Chilled Tequila With Sangrita Chaser</span><span class="price">₹349.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Draught Beer</h3>
+                            <div class="menu-item"><span>Kingfisher Premium (300 ml)</span><span class="price">₹179.00</span></div>
+                            <div class="menu-item"><span>Kingfisher Premium (500 ml)</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Kingfisher Premium (1500 ml)</span><span class="price">₹849.00</span></div>
+                            <div class="menu-item"><span>Kingfisher Premium (3000 ml)</span><span class="price">₹1,699.00</span></div>
+                            <div class="menu-item"><span>Budweiser Premium (300 ml)</span><span class="price">₹229.00</span></div>
+                            <div class="menu-item"><span>Budweiser Premium (500 ml)</span><span class="price">₹379.00</span></div>
+                            <div class="menu-item"><span>Budweiser Premium (1500 ml)</span><span class="price">₹1,149.00</span></div>
+                            <div class="menu-item"><span>Budweiser Premium (3000 ml)</span><span class="price">₹1,999.00</span></div>
+                            <div class="menu-item"><span>Budweiser Magnum (300 ml)</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Budweiser Magnum (500 ml)</span><span class="price">₹409.00</span></div>
+                            <div class="menu-item"><span>Budweiser Magnum (1500 ml)</span><span class="price">₹1,199.00</span></div>
+                            <div class="menu-item"><span>Budweiser Magnum (3000 ml)</span><span class="price">₹2,199.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Bottled Beer</h3>
+                            <div class="menu-item"><span>Kingfisher Premium Pint</span><span class="price">₹239.00</span></div>
+                            <div class="menu-item"><span>Kingfisher Strong Pint</span><span class="price">₹239.00</span></div>
+                            <div class="menu-item"><span>Kingfisher Ultra Pint</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Budweiser Pint</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Budweiser Magnum Pint</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Bira White Pint</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Hoegaarden Pint</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Corona Pint</span><span class="price">₹399.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>RTDs</h3>
+                            <div class="menu-item"><span>Bacardi Breezer Blackberry</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Bacardi Breezer Blueberry</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Bacardi Breezer Cranberry</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Bacardi Breezer Jamaican</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Bacardi Breezer Orange</span><span class="price">₹299.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>White Wine</h3>
+                            <div class="menu-item"><span>Sula Sauvignon Blanc (Glass)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Sula Sauvignon Blanc (750 ml)</span><span class="price">₹1,699.00</span></div>
+                            <div class="menu-item"><span>Grover Sauvignon Blanc (Glass)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Grover Sauvignon Blanc (750 ml)</span><span class="price">₹1,699.00</span></div>
+                            <div class="menu-item"><span>Deva Chardonnay (Glass)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Deva Chardonnay (750 ml)</span><span class="price">₹1,699.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Red Wine</h3>
+                            <div class="menu-item"><span>Sula Satori Merlot Malbec (Glass)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Sula Satori Merlot Malbec (750 ml)</span><span class="price">₹1,699.00</span></div>
+                            <div class="menu-item"><span>Grover La Reserve Cabernet (Glass)</span><span class="price">₹499.00</span></div>
+                            <div class="menu-item"><span>Grover La Reserve Cabernet (750 ml)</span><span class="price">₹2,449.00</span></div>
+                            <div class="menu-item"><span>Grover Cabernet Shiraz (Glass)</span><span class="price">₹359.00</span></div>
+                            <div class="menu-item"><span>Grover Cabernet Shiraz (750 ml)</span><span class="price">₹1,699.00</span></div>
+                            <div class="menu-item"><span>Fratelli Sangiovese (Glass)</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Fratelli Sangiovese (750 ml)</span><span class="price">₹199.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Sparkling Wine</h3>
+                            <div class="menu-item"><span>Sula Brut Tropical (750 ml)</span><span class="price">₹2,999.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Martinis</h3>
+                            <div class="menu-item"><span>Chocolatini Martini</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Classic Martini</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Watermelon Martini</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Apple & Cucumber Martini</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Lychee Martini</span><span class="price">₹299.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Fantastic Margaritas</h3>
+                            <div class="menu-item"><span>Pineapple & Bell Pepper Margarita</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Strawberry & Lychee Margarita</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Passion & Mint Margarita</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Classic Margarita</span><span class="price">₹449.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Flavoured Misty</h3>
+                            <div class="menu-item"><span>Cranberry Mojito</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Orange & Green Tea Mojito</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Classic Mojito</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Tangerine Caipirojka</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Lemongrass & Ginger Caipirojka</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Classic Caipirojka</span><span class="price">₹299.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Top of the World</h3>
+                            <div class="menu-item"><span>Bull Frog</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Kangaroos Blue</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>On The Roof</span><span class="price">₹499.00</span></div>
+                            <div class="menu-item"><span>Long Island Tea</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Caribbean Night</span><span class="price">₹399.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Evergreen Classical</h3>
+                            <div class="menu-item"><span>Sex On Pattaya Beach</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Sex On The Beach</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Whisky Sour</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Strawberry Colada</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Pina Colada</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Frozen Daiquiri Peach</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Mango Colada</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Cosmopolitan</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Bloody Mary</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Chatka Mary</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Frozen Daiquiri Strawberry</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Frozen Daiquiri Litchi</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Screwdriver</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Mango Driver</span><span class="price">₹299.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>House Special</h3>
+                            <div class="menu-item"><span>B-Hive Rita</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>B-Hive Bogito</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>B-Hisky Sour</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Spiked Sour</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>B-Hive Slings</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Sambucus</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Russion Passion</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Carribian Toss</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Cucumber Cooler</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Asian Toxic</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Thea Martini Vodka</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Thea Martini Gin</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>A Passionate Affair</span><span class="price">₹449.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Mocktails</h3>
+                            <div class="menu-item"><span>Fruit Punch</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Summer Special</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Iced Tea Lemongrass</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Iced Tea Lime</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Iced Tea Mint</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Iced Tea Orange</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Iced Tea Peach</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Flavoured Lemonade Green Apple</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Flavoured Lemonade Raspberry</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Flavoured Lemonade Strawberry</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Flavoured Lemonade Watermelon</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Coffee Toffee</span><span class="price">₹229.00</span></div>
+                            <div class="menu-item"><span>Iced Tea Ginger</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Crushed Velvet</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Flavoured Lemonade Blueberry</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Double Berry</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Mango+Berry Cooler</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Guava Mary</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>C2</span><span class="price">₹229.00</span></div>
+                            <div class="menu-item"><span>Virgin Mojito</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>M2 Smoothie</span><span class="price">₹229.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Juices & Soft Beverages</h3>
+                            <div class="menu-item"><span>Fresh Lime Soda</span><span class="price">₹109.00</span></div>
+                            <div class="menu-item"><span>Fresh Lime Water</span><span class="price">₹99.00</span></div>
+                            <div class="menu-item"><span>Soda</span><span class="price">₹69.00</span></div>
+                            <div class="menu-item"><span>Canned Juice</span><span class="price">₹99.00</span></div>
+                            <div class="menu-item"><span>Bottled Water Roots</span><span class="price">₹30.00</span></div>
+                            <div class="menu-item"><span>Soft Drinks</span><span class="price">₹79.00</span></div>
+                            <div class="menu-item"><span>Tonic Water</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Energy Drink</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Ginger Ale</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Diet Cola Tin</span><span class="price">₹99.00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Starters & Bites -->
-    <div class="menu-category">
-      <div class="category-header">
-        <h2>Starters & Bites</h2>
-        <div class="category-icon">🥘</div>
-      </div>
-      <div class="category-content">
-        <p>
-          Our starter menu is designed for sharing, snacking, and setting the tone. Whether you 
-          crave Indo-fusion delights, spicy tandoori grills, crispy Asian bites, or continental 
-          comfort food, each dish pairs beautifully with your drink and the vibe around you.
-        </p>
-      </div>
-    </div>
+            <!-- Starters & Bites -->
+            <div class="menu-category">
+                <div class="category-header">
+                    <h2>Starters & Bites</h2>
+                    <div class="category-icon">🥘</div>
+                </div>
+                <div class="category-content">
+                    <p>
+                        Our starter menu is designed for sharing, snacking, and setting the tone. Whether you 
+                        crave Indo-fusion delights, spicy tandoori grills, crispy Asian bites, or continental 
+                        comfort food, each dish pairs beautifully with your drink and the vibe around you.
+                    </p>
+                    <div class="menu-items">
+                        <div class="menu-subcategory">
+                            <h3>Salads</h3>
+                            <div class="menu-item"><span>Caesar Salad (Veg)</span><span class="price">₹219.00</span></div>
+                            <div class="menu-item"><span>Caesar Salad (Chicken)</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Watermelon And Feta Salad</span><span class="price">₹219.00</span></div>
+                            <div class="menu-item"><span>Boiled Vegetable Salad</span><span class="price">₹259.00</span></div>
+                            <div class="menu-item"><span>Spicy Grilled Fish Salad</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Murgh Tikka Angarey Salad</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Cheese Cherry Pineapple</span><span class="price">₹269.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>All Time Favorites</h3>
+                            <div class="menu-item"><span>Chakna Platter</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Masala Papad</span><span class="price">₹129.00</span></div>
+                            <div class="menu-item"><span>Peanut Masala</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Salt French Fries</span><span class="price">₹189.00</span></div>
+                            <div class="menu-item"><span>Peri Peri French Fries</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Cashew Nut Fry</span><span class="price">₹259.00</span></div>
+                            <div class="menu-item"><span>Onion Pakoda</span><span class="price">₹179.00</span></div>
+                            <div class="menu-item"><span>Egg Pakoda</span><span class="price">₹219.00</span></div>
+                            <div class="menu-item"><span>Paneer Pakoda</span><span class="price">₹289.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Continental Appetizers (Veg)</h3>
+                            <div class="menu-item"><span>Potato Wedges</span><span class="price">₹229.00</span></div>
+                            <div class="menu-item"><span>Cheese Jalapeno Garlic Bread</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Tomato & Olive Bruschetta</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Chilli Cheese Garlic Bread</span><span class="price">₹229.00</span></div>
+                            <div class="menu-item"><span>Corn Cheese Balls</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Jalapeno Cheese Poppers</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Mushroom Olive Crostini</span><span class="price">₹269.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Continental Appetizers (Non-Veg)</h3>
+                            <div class="menu-item"><span>Garlic Mushroom Chicken Wings</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Peri-Peri Chicken Wings</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>BBQ Chilli Garlic Chicken Wings</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Nachos Chicken (Large)</span><span class="price">₹359.00</span></div>
+                            <div class="menu-item"><span>Nachos Chicken (Small)</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Nachos Veg (Large)</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Nachos Veg (Small)</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Corn Crusted Beer Chicken</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Panko Crusted Chicken</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Special Lawn Chicken</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Fish Finger</span><span class="price">₹399.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Oriental Appetizers (Veg)</h3>
+                            <div class="menu-item"><span>Water Chestnut Chilli Plum</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Honey Chilli Potato</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Gobi Manchurian</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Mushroom Manchurian</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Baby Corn Manchurian</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Gobi Chilli</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Mushroom Chilli</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Baby Corn Chilli</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Paneer Chilli</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Paneer Manchurian</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Paneer 65</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Mushroom 65</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Gobi 65</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Baby Corn 65</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>American Corn Salt & Pepper</span><span class="price">₹279.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Oriental Appetizers (Non-Veg)</h3>
+                            <div class="menu-item"><span>Chicken 65</span><span class="price">₹309.00</span></div>
+                            <div class="menu-item"><span>Chicken Satay</span><span class="price">₹309.00</span></div>
+                            <div class="menu-item"><span>Chilli Chicken</span><span class="price">₹309.00</span></div>
+                            <div class="menu-item"><span>Honey Glazed Sesame Chicken</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Five Spices Chicken</span><span class="price">₹309.00</span></div>
+                            <div class="menu-item"><span>Dragon Chicken</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Orange Lemon Chicken</span><span class="price">₹309.00</span></div>
+                            <div class="menu-item"><span>Chicken Manchurian</span><span class="price">₹309.00</span></div>
+                            <div class="menu-item"><span>Prawns Manchurian</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Curry Leaves Chicken</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Chicken Lollipop Dry (6 Pcs)</span><span class="price">₹259.00</span></div>
+                            <div class="menu-item"><span>Chicken Lollipop Dry (12 Pcs)</span><span class="price">₹499.00</span></div>
+                            <div class="menu-item"><span>Chicken Schezwan Lollipop (6 Pcs)</span><span class="price">₹279.00</span></div>
+                            <div class="menu-item"><span>Chicken Schezwan Lollipop (12 Pcs)</span><span class="price">₹509.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Tandoori Appetizers (Veg)</h3>
+                            <div class="menu-item"><span>Tandoori Veg Platter</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Paneer Pudina Tikka</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Stuffed Paneer Tikka</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Paneer Tikka</span><span class="price">₹309.00</span></div>
+                            <div class="menu-item"><span>Tandoori Khumb</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Peshawari Paneer Tikka</span><span class="price">₹319.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Tandoori Appetizers (Non-Veg)</h3>
+                            <div class="menu-item"><span>Tandoori Kebab Platter</span><span class="price">₹619.00</span></div>
+                            <div class="menu-item"><span>Tandoori Chicken (Half)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Tandoori Chicken (Full)</span><span class="price">₹649.00</span></div>
+                            <div class="menu-item"><span>Makhmali Murgh Tikka</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Fish Tikka</span><span class="price">₹419.00</span></div>
+                            <div class="menu-item"><span>Hariyali Fish Tikka</span><span class="price">₹429.00</span></div>
+                            <div class="menu-item"><span>Murgh Tikka Surkh</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Lasooni Murgh Tikka</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Chicken Kali Mirch Kebab</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Chicken Sheek Kebab</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Mutton Sheek Kebab</span><span class="price">₹599.00</span></div>
+                            <div class="menu-item"><span>Gulabi Tangdi</span><span class="price">₹369.00</span></div>
+                            <div class="menu-item"><span>Tandoori Pomfret</span><span class="price">Seasonal</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Main Course -->
-    <div class="menu-category">
-      <div class="category-header">
-        <h2>Main Course – A Global Spread</h2>
-        <div class="category-icon">🍽️</div>
-      </div>
-      <div class="category-content">
-        <p>
-          When it comes to food, BHIVE is known for its multi-cuisine offerings that bring 
-          together rich Indian gravies, sizzlers, Asian wok dishes, and wood-fired continental 
-          specials. Designed by chefs who understand both traditional flavors and modern 
-          tastes, our menu strikes the right balance between comfort and creativity.
-        </p>
-      </div>
-    </div>
+            <!-- Main Course -->
+            <div class="menu-category">
+                <div class="category-header">
+                    <h2>Main Course – A Global Spread</h2>
+                    <div class="category-icon">🍽️</div>
+                </div>
+                <div class="category-content">
+                    <p>
+                        When it comes to food, BHIVE is known for its multi-cuisine offerings that bring 
+                        together rich Indian gravies, sizzlers, Asian wok dishes, and wood-fired continental 
+                        specials. Designed by chefs who understand both traditional flavors and modern 
+                        tastes, our menu strikes the right balance between comfort and creativity.
+                    </p>
+                    <div class="menu-items">
+                        <div class="menu-subcategory">
+                            <h3>Vegetarian</h3>
+                            <div class="menu-item"><span>Thai Veg Green Curry With Steamed Rice</span><span class="price">₹359.00</span></div>
+                            <div class="menu-item"><span>Cottage Cheese & Pepper Shashlik</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Tadkewali Dal</span><span class="price">₹219.00</span></div>
+                            <div class="menu-item"><span>Mushroom Do Pyaaza</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Kadhai Subzi</span><span class="price">₹239.00</span></div>
+                            <div class="menu-item"><span>Kadhai Paneer</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Paneer Makhani</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Paneer Khurchan</span><span class="price">₹319.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Non-Vegetarian</h3>
+                            <div class="menu-item"><span>Kadai Chicken</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Thai Curry Red Chicken With Steamed Rice</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Thai Curry Yellow Prawns With Steamed Rice</span><span class="price">₹649.00</span></div>
+                            <div class="menu-item"><span>Peri Peri Chicken Steak</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Chicken Hariyali Masala</span><span class="price">₹339.00</span></div>
+                            <div class="menu-item"><span>Grilled Fish Lemon Butter Sauce</span><span class="price">₹449.00</span></div>
+                            <div class="menu-item"><span>Chicken Tikka Masala</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Murgh Makhani</span><span class="price">₹339.00</span></div>
+                            <div class="menu-item"><span>Bhuna Gosht</span><span class="price">₹599.00</span></div>
+                            <div class="menu-item"><span>Dum Ka Murgh</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Lagan Ka Murgh</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Murg Rahra</span><span class="price">₹339.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Coastal</h3>
+                            <div class="menu-item"><span>Paneer Ghee Roast</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Mushroom Ghee Roast</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Chicken Ghee Roast</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Chicken Urval</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Chicken Kebab</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Mutton Ghee Roast</span><span class="price">₹599.00</span></div>
+                            <div class="menu-item"><span>Mutton Sukka</span><span class="price">₹599.00</span></div>
+                            <div class="menu-item"><span>Chicken Sukka</span><span class="price">₹329.00</span></div>
+                            <div class="menu-item"><span>Prawns Sukka</span><span class="price">₹469.00</span></div>
+                            <div class="menu-item"><span>Mutton Urval</span><span class="price">₹599.00</span></div>
+                            <div class="menu-item"><span>Mutton Pepper Fry</span><span class="price">₹599.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Seafood</h3>
+                            <div class="menu-item"><span>Butter Garlic Prawns</span><span class="price">₹469.00</span></div>
+                            <div class="menu-item"><span>Chilli Prawns</span><span class="price">₹429.00</span></div>
+                            <div class="menu-item"><span>Chilli Fish</span><span class="price">₹419.00</span></div>
+                            <div class="menu-item"><span>Tandoori Prawn</span><span class="price">₹649.00</span></div>
+                            <div class="menu-item"><span>Prawns Ghee Roast</span><span class="price">₹499.00</span></div>
+                            <div class="menu-item"><span>Prawns Koliwada</span><span class="price">₹469.00</span></div>
+                            <div class="menu-item"><span>Seafood Platter</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Pomfret Fish Masala Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Pomfret Fish Tawa Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Pomfret Fish Rava Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Anjal Fish Masala Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Anjal Fish Tawa Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Anjal Fish Rava Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Bangda Masala Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Bangda Tawa Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Bangda Rava Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Kane Masala Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Kane Tawa Fry</span><span class="price">Seasonal</span></div>
+                            <div class="menu-item"><span>Kane Rava Fry</span><span class="price">Seasonal</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Pasta</h3>
+                            <div class="menu-item"><span>Spaghetti Aglio e Olio (Veg)</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Spaghetti Aglio e Olio (Chicken)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Alfredo Pasta (Veg)</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Alfredo Pasta (Chicken)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Pasta Arrabbiata (Veg, Penne)</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Pasta Arrabbiata (Chicken, Penne)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Pasta Arrabbiata (Veg, Spaghetti)</span><span class="price">₹289.00</span></div>
+                            <div class="menu-item"><span>Pasta Arrabbiata (Chicken, Spaghetti)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>B-Hive Special Pasta (Veg)</span><span class="price">₹339.00</span></div>
+                            <div class="menu-item"><span>B-Hive Special Pasta (Non-Veg)</span><span class="price">₹379.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Pizza & Burger</h3>
+                            <div class="menu-item"><span>Vegetariana Farm House Pizza</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Paneer Tikka Pizza</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Margarita Pizza</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Smoky BBQ Chicken Pizza</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Chicken Delight Pizza</span><span class="price">₹399.00</span></div>
+                            <div class="menu-item"><span>Chicken Tikka Pizza</span><span class="price">₹399.00</span></div>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>Indian Bread</h3>
+                            <div class="menu-item"><span>Tandoori Roti (Plain)</span><span class="price">₹59.00</span></div>
+                            <div class="menu-item"><span>Tandoori Roti (Butter)</span><span class="price">₹69.00</span></div>
+                            <div class="menu-item"><span>Naan (Plain)</span><span class="price">₹59.00</span></div>
+                            <div class="menu-item"><span>Naan (Butter)</span><span class="price">₹69.00</span></div>
+                            <div class="menu-item"><span>Kulcha (Plain)</span><span class="price">₹59.00</span></div>
+                            <div class="menu-item"><span>Kulcha (Butter)</span><span class="price">₹69.00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Late Night Dining -->
-    <div class="menu-category">
-      <div class="category-header">
-        <h2>Late-Night Dining</h2>
-        <div class="category-icon">🌙</div>
-      </div>
-      <div class="category-content">
-        <p>
-          For the night owls, our kitchen stays open late on weekends. Whether you want a 
-          bowl of cheesy pasta, crispy fries, a filling biryani, or something sweet to end the 
-          night, we've got your cravings covered till closing time.
-        </p>
-      </div>
-    </div>
+            <!-- Late-Night Dining -->
+            <div class="menu-category">
+                <div class="category-header">
+                    <h2>Late-Night Dining</h2>
+                    <div class="category-icon">🌙</div>
+                </div>
+                <div class="category-content">
+                    <p>
+                        For the night owls, our kitchen stays open late on weekends. Whether you want a 
+                        bowl of cheesy pasta, crispy fries, a filling biryani, or something sweet to end the 
+                        night, we've got your cravings covered till closing time.
+                    </p>
+                    <div class="menu-items">
+                        <div class="menu-subcategory">
+                            <h3>Eggstacy</h3>
+                            <div class="menu-item"><span>Deviled Egg</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Mushroom & Cheese Omelette</span><span class="price">₹159.00</span></div>
+                            <div class="menu-item"><span>Egg Omelette</span><span class="price">₹139.00</span></div>
+                            <div class="menu-item"><span>Egg Chilli</span><span class="price">₹239.00</span></div>
+                            <div class="menu-item"><span>Egg Manchurian</span><span class="price">₹239.00</span></div>
+                        </div>
 
-    <!-- Custom Menus -->
-    <div class="menu-category">
-      <div class="category-header">
-        <h2>Custom Menus for Events</h2>
-        <div class="category-icon">🎉</div>
-      </div>
-      <div class="category-content">
-        <p>
-          Hosting a celebration? Let our culinary team curate a personalized menu tailored to 
-          your taste, theme, and vibe — one of the reasons BHIVE is also rated highly among 
-          party places in Koramangala and corporate party venues in Bangalore.
-        </p>
-      </div>
-    </div>
+                        <div class="menu-subcategory">
+                            <h3>Rice & Noodles</h3>
+                            <div class="menu-item"><span>Hakka Noodles (Veg)</span><span class="price">₹239.00</span></div>
+                            <div class="menu-item"><span>Hakka Noodles (Chicken)</span><span class="price">₹279.00</span></div>
+                            <div class="menu-item"><span>Butter Garlic Noodles (Veg)</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Butter Garlic Noodles (Chicken)</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Golden Garlic Fried Rice (Veg)</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Veg Fried Rice</span><span class="price">₹229.00</span></div>
+                            <div class="menu-item"><span>Fried Rice (Chicken)</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Veg Schezwan Fried Rice</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Schezwan Fried Rice (Chicken)</span><span class="price">₹299.00</span></div>
+                            <div class="menu-item"><span>Veg Pulao</span><span class="price">₹239.00</span></div>
+                            <div class="menu-item"><span>Veg Biriyani</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Hara Veg Biriyani</span><span class="price">₹269.00</span></div>
+                            <div class="menu-item"><span>Chicken Dum Biriyani</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Hara Chicken Biriyani</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Mutton Dum Biriyani</span><span class="price">₹569.00</span></div>
+                            <div class="menu-item"><span>Dal Khichdi</span><span class="price">₹239.00</span></div>
+                            <div class="menu-item"><span>Palak Khichdi</span><span class="price">₹249.00</span></div>
+                        </div>
 
-  </div>
-</section>
+                         <div class="menu-subcategory" >
+                            <h3>Sweet Delicacies</h3>
+                            <div class="menu-item"><span>Gulab Jamun</span><span class="price">₹109.00</span></div>
+                            <div class="menu-item"><span>Gulab Jamun With Ice Cream</span><span class="price">₹149.00</span></div>
+                            <div class="menu-item"><span>Gajar Halwa</span><span class="price">₹169.00</span></div>
+                            <div class="menu-item"><span>Gajar Halwa with Ice Cream</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Sizzling Brownie</span><span class="price">₹279.00</span></div>
+                            <div class="menu-item"><span>Sizzling Brownie Ice Cream</span><span class="price">₹319.00</span></div>
+                            <div class="menu-item"><span>Fruit Salad</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Fried Ice Cream</span><span class="price">₹239.00</span></div>
+                            <div class="menu-item"><span>Frozen Delight - Guava</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Frozen Delight - Sitaphal</span><span class="price">₹219.00</span></div>
+                            <div class="menu-item"><span>Frozen Delight - Chikmagalur</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Frozen Delight - Gulkand</span><span class="price">₹199.00</span></div>
+                            <div class="menu-item"><span>Frozen Delight - Mysore Pak</span><span class="price">₹219.00</span></div>
+                            <div class="menu-item"><span>Frozen Delight - Sweet Pan</span><span class="price">₹219.00</span></div>
+                        </div>
+                        <div class="menu-subcategory" style="margin-top: -487px;">
+                            <h3>Street Food or Bites / Bhabha Diaries</h3>
+                            <div class="menu-item"><span>Kheema Pav (Chicken)</span><span class="price">₹249.00</span></div>
+                            <div class="menu-item"><span>Kheema Pav (Mutton)</span><span class="price">₹349.00</span></div>
+                            <div class="menu-item"><span>Bhurji Pav</span><span class="price">₹199.00</span></div>
+                        </div>
+                       
+                       
+                    </div>
+                </div>
+            </div>
 
-<!-- Menu Footer -->
-<section class="menu-footer">
-  <div class="container">
-    <div class="footer-content">
-      <p class="footer-quote">
-        At BHIVE, food isn't just something you order. It's something you remember.
-      </p>
-    </div>
-  </div>
-</section>
+            <!-- Custom Menus -->
+            <div class="menu-category">
+                <div class="category-header">
+                    <h2>Custom Menus for Events</h2>
+                    <div class="category-icon">🎉</div>
+                </div>
+                <div class="category-content">
+                    <p>
+                        Hosting a celebration? Let our culinary team curate a personalized menu tailored to 
+                        your taste, theme, and vibe — one of the reasons BHIVE is also rated highly among 
+                        party places in Koramangala and corporate party venues in Bangalore.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
- <script src="script.js"></script>
-    
+    <!-- Menu Footer -->
+    <section class="menu-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-quote">
+                    At BHIVE, food isn't just something you order. It's something you remember.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
