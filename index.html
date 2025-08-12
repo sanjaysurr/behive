@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>B-Hive Restaurant Website with Fixed Navigation and Media Queries</title>
+  <title>B-Hive </title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -22,8 +22,12 @@
     </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
+      <li><a href="#highlights">Our Highlights</a></li>
+      <li><a href="#gallery-section"> Gallery</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="event.html">Events</a></li>
+     
+      
      
       <li><a href="about.html" class="nav-link">About</a></li>
     </ul>
@@ -33,46 +37,53 @@
   <!-- ==================== Hero Section ==================== -->
  <section class="hero-section" id="home">
   <div class="hero">
-    
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/pub (1) (1) (2) (1).mov" type="video/mp4">
+      <!-- Add a fallback image in case video can't load -->
+      Your browser does not support the video tag.
+    </video>
+
     <!-- ✨ Left Side Text Box -->
     <div class="hero-text" id="heroText">
       <h1 class="buzz-heading">Experience the Buzz at the Best Pub in Koramangala</h1>
-      <p class="buzz-subtext">Let the weekend come alive at B Hive Pub and Lounge Bar
- </p>
+      <p class="buzz-subtext">Let the weekend come alive at B Hive Pub and Lounge Bar</p>
     </div>
 
     <!-- ✅ Right Side Form -->
-   <form class="reservation-form-right" id="reservation-form-right">
-  <h3>Book a Table</h3>
+    <form class="reservation-form-right" id="reservation-form-right">
+      <h3>Book a Table</h3>
 
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Email Address" required />
-  <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
 
-  <select name="guests" required>
-    <option value="">Select Guests</option>
-    <option>1 Guest</option>
-    <option>2 Guests</option>
-    <option>3 Guests</option>
-    <option>4+ Guests</option>
-  </select>
+      <select name="guests" required>
+        <option value="">Select Guests</option>
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>3 Guests</option>
+        <option>4+ Guests</option>
+      </select>
 
-  <div class="date-time-row">
-    <input type="date" name="date" required />
-    <input type="time" name="time" required />
-  </div>
+      <div class="date-time-row">
+        <input type="date" name="date" required />
+        <input type="time" name="time" required />
+      </div>
 
-  <button type="submit" class="submit-btn">Reserve</button>
-</form>
- 
+      <button type="submit" class="submit-btn">Reserve</button>
+    </form>
+
   </div>
 </section>
 
 
 
 
+
   <!-- ==================== Highlights Section ==================== -->
- <section class="highlights-section">
+ <section class="highlights-section" id="highlights">
   <div class="section-heading">
     <h2>Our Highlights</h2>
     <p>What makes B-Hive unforgettable</p>
@@ -118,7 +129,7 @@
   </section>
 
   <!-- ==================== Gallery Section ==================== -->
-  <section class="gallery-section">
+  <section class="gallery-section" id="gallery-section">
     <h2>Our Gallery</h2>
     <div class="masonry-grid">
       <img src="images/DSC07954_11zon.jpg" class="grid-item tall" alt="Image 1">
