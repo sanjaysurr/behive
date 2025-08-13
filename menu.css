@@ -1,4 +1,4 @@
-/* Navigation Styles */
+/* Navigation Styles (Unchanged) */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -90,7 +90,7 @@
     transition: all 0.3s ease;
 }
 
-/* Menu Hero Section */
+/* Menu Hero Section (Unchanged) */
 .menu-hero {
     padding: 150px 0 100px;
     background: linear-gradient(135deg, rgba(66, 55, 56, 0.9) 0%, rgba(42, 31, 32, 0.9) 100%);
@@ -139,7 +139,7 @@
     line-height: 1.6;
 }
 
-/* Menu Introduction */
+/* Menu Introduction (Unchanged) */
 .menu-intro {
     padding: 80px 0;
     background: linear-gradient(135deg, #f8f5f5 0%, #e8e4e4 100%);
@@ -149,6 +149,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .intro-content {
@@ -167,7 +168,7 @@
 
 /* Menu Categories */
 .menu-categories {
-    padding: 80px 0;
+    padding: 80px 0; /* Adjusted in media queries */
     background: linear-gradient(135deg, #423738 0%, #2a1f20 100%);
     position: relative;
     background-image: url('images/DSC08115_11zon.jpg');
@@ -203,6 +204,7 @@
     transition: all 0.3s ease;
     border: 1px solid rgba(66, 55, 56, 0.1);
     cursor: pointer;
+    box-sizing: border-box; /* Ensure padding doesn’t cause overflow */
 }
 
 .menu-category:hover {
@@ -287,7 +289,7 @@
     color: #b91c1c;
 }
 
-/* Menu Footer */
+/* Menu Footer (Unchanged) */
 .menu-footer {
     padding: 80px 0;
     background: linear-gradient(135deg, #f8f5f5 0%, #e8e4e4 100%);
@@ -308,83 +310,81 @@
     margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-content h1 {
+/* Media Queries for Menu Card and Overlap Fix */
+@media (max-width: 900px) {
+    body {
+        padding-top: 70px; /* Offset for fixed header */
+    }
+
+    .menu-categories {
+        padding: 60px 0; /* Reduced padding, header offset handled by body */
+    }
+
+    .menu-hero {
+        padding: 80px 0 60px; /* Adjusted for mobile, below header */
+    }
+
+    .container {
+        padding: 0 15px; /* Reduced padding for tighter fit */
+        width: 100%; /* Ensure container spans full viewport */
+        max-width: 100%; /* Remove max-width constraint */
+        box-sizing: border-box;
+    }
+
+    .menu-category {
+        width: 100%; /* Full-width menu card */
+        max-width: 100%; /* Ensure no width constraints */
+        margin: 0 0 30px 0; /* Remove side margins, keep bottom margin */
+        padding: 30px 20px; /* Reduced padding, ensure content fits */
+        border-radius: 15px; /* Slightly smaller border radius */
+        text-align: center; /* Center all text */
+        box-sizing: border-box; /* Prevent padding overflow */
+    }
+
+    .category-header {
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center horizontally */
+        gap: 15px; /* Reduced gap */
+    }
+
+    .category-header h2 {
+        font-size: 2rem; /* Smaller for mobile */
+        text-align: center;
+    }
+
+    .category-icon {
+        width: 70px; /* Smaller icon */
+        height: 70px;
         font-size: 2.8rem;
     }
-    
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .intro-content p {
-        font-size: 1.1rem;
-    }
-    
-    .category-header h2 {
-        font-size: 1.8rem;
-    }
-    
-    .category-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 2.5rem;
-    }
-    
-    .category-content p {
-        font-size: 1.1rem;
-    }
-    
-    .footer-quote {
-        font-size: 1.6rem;
-    }
-    
-    .menu-category {
-        padding: 30px;
-    }
-}
 
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .category-header {
-        flex-direction: column;
+    .category-content p {
+        font-size: 1.1rem; /* Smaller text */
         text-align: center;
-        gap: 15px;
     }
-    
-    .category-header h2 {
-        font-size: 1.6rem;
-    }
-    
-    .category-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
-    }
-    
-    .category-content p {
-        font-size: 1rem;
-    }
-    
-    .footer-quote {
-        font-size: 1.4rem;
-    }
-    
-    .menu-category {
-        padding: 25px;
-    }
-}
 
-/* Mobile Navigation */
-@media (max-width: 900px) {
+    .menu-items {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 15px; /* Reduced gap */
+    }
+
+    .menu-subcategory h3 {
+        font-size: 1.4rem; /* Smaller for mobile */
+        text-align: center;
+    }
+
+    .menu-item {
+        flex-direction: column; /* Stack name and price */
+        align-items: center; /* Center items */
+        padding: 8px 0; /* Adjusted padding */
+        font-size: 0.95rem; /* Smaller text */
+    }
+
+    .menu-item .price {
+        font-size: 0.95rem;
+        margin-top: 5px;
+    }
+
     .nav-links {
         position: fixed;
         top: 70px;
@@ -401,9 +401,9 @@
         opacity: 0;
         pointer-events: none;
         z-index: 999;
-        display: flex; /* Ensure flexbox is applied */
-        align-items: center; /* Center items horizontally in flex column */
-        justify-content: center; /* Center items vertically in flex column */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-links.active {
@@ -416,11 +416,145 @@
         color: #f4f3f3;
         padding: 2rem 3rem;
         display: block;
-        text-align: center; /* Center the text horizontally */
+        text-align: center;
     }
 
     .hamburger {
         display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px; /* Maintain header offset */
+    }
+
+    .menu-categories {
+        padding: 50px 0; /* Further reduced padding */
+    }
+
+    .menu-hero {
+        padding: 70px 0 50px; /* Adjusted for smaller screens */
+    }
+
+    .container {
+        padding: 0 10px; /* Tighter padding */
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .menu-category {
+        padding: 25px 15px; /* Tighter padding */
+        border-radius: 12px; /* Smaller border radius */
+    }
+
+    .category-header h2 {
+        font-size: 1.8rem; /* Smaller for smaller screens */
+    }
+
+    .category-icon {
+        width: 60px; /* Smaller icon */
+        height: 60px;
+        font-size: 2.5rem;
+    }
+
+    .category-content p {
+        font-size: 1rem; /* Smaller text */
+    }
+
+    .menu-subcategory h3 {
+        font-size: 1.3rem; /* Smaller titles */
+    }
+
+    .menu-item {
+        font-size: 0.9rem; /* Smaller text */
+    }
+
+    .menu-item .price {
+        font-size: 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .intro-content p {
+        font-size: 1.1rem;
+    }
+
+    .footer-quote {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 70px; /* Maintain header offset */
+    }
+
+    .menu-categories {
+        padding: 40px 0; /* Minimal padding */
+    }
+
+    .menu-hero {
+        padding: 60px 0 40px; /* Minimal padding */
+    }
+
+    .container {
+        padding: 0 5px; /* Minimal padding */
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .menu-category {
+        padding: 20px 10px; /* Minimal padding */
+        border-radius: 10px; /* Minimal border radius */
+    }
+
+    .category-header h2 {
+        font-size: 1.6rem; /* Minimal font size */
+    }
+
+    .category-icon {
+        width: 50px; /* Smallest icon */
+        height: 50px;
+        font-size: 2rem;
+    }
+
+    .category-content p {
+        font-size: 0.95rem; /* Smallest text */
+    }
+
+    .menu-subcategory h3 {
+        font-size: 1.2rem; /* Smallest titles */
+    }
+
+    .menu-item {
+        font-size: 0.85rem; /* Smallest text */
+    }
+
+    .menu-item .price {
+        font-size: 0.85rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
+    }
+
+    .footer-quote {
+        font-size: 1.4rem;
     }
 }
 
@@ -435,13 +569,13 @@
         transform: none;
         width: auto;
         height: auto;
-        display: flex; /* Maintain flexbox for desktop */
-        align-items: center; /* Optional: center vertically in desktop */
-        justify-content: flex-start; /* Reset to default or adjust as needed */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .nav-links li a {
-        text-align: left; /* Reset to left for desktop, adjust if needed */
+        text-align: left;
     }
 
     .hamburger {
