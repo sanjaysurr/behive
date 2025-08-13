@@ -126,21 +126,17 @@ document.addEventListener('DOMContentLoaded', function() {
   observer.observe(heroText);
 
   
-    // Close menu when a link is clicked
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            hamburger.setAttribute('aria-expanded', 'false');
-        });
-    });
-
-    // Category card toggle for menu items
-    document.querySelectorAll('.menu-category').forEach(category => {
-        category.addEventListener('click', () => {
-            const menuItems = category.querySelector('.menu-items');
-            menuItems.classList.toggle('active');
-        });
-    });
-
+  // Check if Font Awesome icons loaded; if not, show fallback text
+    function checkIcons() {
+      const whatsappIcon = document.querySelector('.whatsapp-btn i');
+      const phoneIcon = document.querySelector('.phone-btn i');
+      if (whatsappIcon.offsetWidth === 0 || getComputedStyle(whatsappIcon).display === 'none') {
+        document.querySelector('.whatsapp-btn').classList.add('no-icon');
+      }
+      if (phoneIcon.offsetWidth === 0 || getComputedStyle(phoneIcon).display === 'none') {
+        document.querySelector('.phone-btn').classList.add('no-icon');
+      }
+    }
+    window.addEventListener('load', checkIcons);
 
 

@@ -547,7 +547,7 @@
     position: absolute;
     top: 70px;
     right: 0;
-    background: #fff;
+    background: rgba(66, 55, 56, 0.98);;
     color: #222;
     flex-direction: column;
     width: 180px;

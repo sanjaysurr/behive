@@ -749,6 +749,8 @@ body {
   }
 }
 
+
+
 /* ===================== Responsive: General Layout ===================== */
 @media (max-width: 900px) {
   .content-grid {
@@ -1346,3 +1348,52 @@ body {
 }
 
 
+ .whatsapp-btn, .phone-btn {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      right: 15px; /* Same right position for both */
+      background-color: #25D366; /* WhatsApp green */
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .whatsapp-btn {
+      bottom: 100px; /* Higher position */
+    }
+
+    .phone-btn {
+      bottom: 40px; /* Lower position, below WhatsApp */
+      background-color: #007BFF; /* Phone button blue */
+    }
+
+    .whatsapp-btn:hover, .phone-btn:hover {
+      transform: scale(1.1); /* Slight zoom on hover */
+      opacity: 0.9; /* Slight fade on hover */
+    }
+
+    .whatsapp-btn i, .phone-btn i {
+      margin: 0;
+    }
+
+    /* Fallback text if icons don't load */
+    .whatsapp-btn::after, .phone-btn::after {
+      display: none;
+      content: attr(data-fallback);
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Show fallback text if Font Awesome fails */
+    .whatsapp-btn.no-icon::after, .phone-btn.no-icon::after {
+      display: block;
+    }
