@@ -386,34 +386,39 @@
 /* Mobile Navigation */
 @media (max-width: 900px) {
     .nav-links {
-        position: absolute;
+        position: fixed;
         top: 70px;
-        right: 0;
+        left: 0;
         background: rgba(66, 55, 56, 0.98);
         flex-direction: column;
-        width: 180px;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-        border-radius: 0 0 8px 8px;
+        width: 100%;
+        height: calc(100vh - 70px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        border-radius: 0;
         transform: translateX(100%);
         transition: transform 0.3s, opacity 0.3s;
         padding: 1rem 0;
         opacity: 0;
         pointer-events: none;
         z-index: 999;
+        display: flex; /* Ensure flexbox is applied */
+        align-items: center; /* Center items horizontally in flex column */
+        justify-content: center; /* Center items vertically in flex column */
     }
-    
+
     .nav-links.active {
         transform: translateX(0);
         opacity: 1;
         pointer-events: auto;
     }
-    
+
     .nav-links li a {
-        color: #222;
-        padding: 1rem 2rem;
+        color: #f4f3f3;
+        padding: 2rem 3rem;
         display: block;
+        text-align: center; /* Center the text horizontally */
     }
-    
+
     .hamburger {
         display: flex;
     }
@@ -428,8 +433,17 @@
         opacity: 1;
         pointer-events: auto;
         transform: none;
+        width: auto;
+        height: auto;
+        display: flex; /* Maintain flexbox for desktop */
+        align-items: center; /* Optional: center vertically in desktop */
+        justify-content: flex-start; /* Reset to default or adjust as needed */
     }
-    
+
+    .nav-links li a {
+        text-align: left; /* Reset to left for desktop, adjust if needed */
+    }
+
     .hamburger {
         display: none;
     }

@@ -542,56 +542,72 @@
 }
 
 /* Mobile Navigation */
+
 @media (max-width: 900px) {
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: rgba(66, 55, 56, 0.98);;
-    color: #222;
-    flex-direction: column;
-    width: 180px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-    border-radius: 0 0 8px 8px;
-    transform: translateX(100%);
-    transition: transform 0.3s, opacity 0.3s;
-    padding: 1rem 0;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 999;
-  }
-  
-  .nav-links.active {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  .nav-links li a {
-    color: #222;
-    padding: 1rem 2rem;
-    display: block;
-  }
-  
-  .hamburger {
-    display: flex !important;
-  }
+    .nav-links {
+        position: fixed; /* Changed to fixed for full viewport coverage */
+        top: 70px; /* Matches header height */
+        left: 0; /* Align to left edge for full width */
+        background: rgba(66, 55, 56, 0.98);
+        color: #222;
+        flex-direction: column;
+        width: 100%; /* Full page width */
+        height: calc(100vh - 70px); /* Full height minus header */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        border-radius: 0; /* Removed for full-page look */
+        transform: translateX(100%);
+        transition: transform 0.3s, opacity 0.3s;
+        padding: 1rem 0;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 999;
+        display: flex; /* Ensure flexbox */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-links li a {
+        color: #fdfbfb;
+        padding: 2rem 3rem;
+        display: block;
+        text-align: center; /* Center text in links */
+    }
+
+    .hamburger {
+        display: flex !important;
+    }
 }
 
 @media (min-width: 901px) {
-  .nav-links {
-    position: static;
-    flex-direction: row;
-    background: none;
-    box-shadow: none;
-    opacity: 1;
-    pointer-events: auto;
-    transform: none;
-  }
-  
-  .hamburger {
-    display: none !important;
-  }
+    .nav-links {
+        position: static;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        width: auto; /* Reset for desktop */
+        height: auto; /* Reset for desktop */
+        display: flex; /* Maintain flexbox */
+        align-items: center; /* Optional: align items vertically */
+        justify-content: flex-start; /* Default desktop alignment */
+        color: #222; /* Preserve color */
+    }
+
+    .nav-links li a {
+        text-align: left; /* Reset text alignment for desktop */
+    }
+
+    .hamburger {
+        display: none !important;
+    }
 }
 
 .live-music .section-header h2 {
