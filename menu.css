@@ -582,3 +582,11 @@
         display: none;
     }
 }
+
+.menu-item span {
+  overflow-wrap: break-word;
+  hyphens: auto; /* Optional for better wrapping */
+}
+.menu-item .price {
+  white-space: nowrap; /* Prevent price from wrapping internally */
+}

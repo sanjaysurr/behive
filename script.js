@@ -139,4 +139,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     window.addEventListener('load', checkIcons);
 
+     // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Category card toggle for menu items
+    document.querySelectorAll('.menu-category').forEach(category => {
+        category.addEventListener('click', () => {
+            const menuItems = category.querySelector('.menu-items');
+            menuItems.classList.toggle('active');
+        });
+    });
+
 
