@@ -59,14 +59,9 @@
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Email Address" required />
       <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="guests" placeholder="No Of Guests" required />
 
-      <select name="guests" required>
-        <option value="">Select Guests</option>
-        <option>1 Guest</option>
-        <option>2 Guests</option>
-        <option>3 Guests</option>
-        <option>4+ Guests</option>
-      </select>
+      
 
       <div class="date-time-row">
         <input type="date" name="date" required />
@@ -126,7 +121,7 @@
       <img src="images/IMG-20250728-WA0018_11zon.jpg" alt="Nightlife 2">
       <img src="images/IMG-20250728-WA0019_11zon.jpg" alt="Nightlife 3">
     </div>
-    <a href="#hero-contact-form" class="intro-ccta">Schedule Your Visit</a>
+    <a href="#reservation-form-right" class="intro-ccta">Schedule Your Visit</a>
   </section>
 
   <!-- ==================== Gallery Section ==================== -->
@@ -151,71 +146,7 @@
     
     <div class="container">
         <div class="reservation-testimonials-wrapper">
-          <!-- Left Side - Reservation Form -->
-          <div class="reservation-section" style="margin-top: 60px;">
-            <div class="form-container">
-                <h1>Make a Reservation</h1>
-                <p class="subtitle">Book your table for an unforgettable dining experience</p>
-                
-                <form id="reservationForm" class="reservation-form">
-                    <div class="form-group">
-                        <label for="fullName">Full Name *</label>
-                        <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required placeholder="your@email.com">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
-                    </div>
-                    
-                  
-                    
-                    <div class="form-section">
-                        <h3>Choose Date/Time</h3>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date">Date *</label>
-                                <input type="date" id="date" name="date" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="time">Time *</label>
-                                <select id="time" name="time" required>
-                                    <option value="">Select time</option>
-                                    <option value="17:00">5:00 PM</option>
-                                    <option value="17:30">5:30 PM</option>
-                                    <option value="18:00">6:00 PM</option>
-                                    <option value="18:30">6:30 PM</option>
-                                    <option value="19:00">7:00 PM</option>
-                                    <option value="19:30">7:30 PM</option>
-                                    <option value="20:00">8:00 PM</option>
-                                    <option value="20:30">8:30 PM</option>
-                                    <option value="21:00">9:00 PM</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="occasion">Select Occasion *</label>
-                        <select id="occasion" name="occasion">
-                            <option value="">Select an occasion</option>
-                            <option value="birthday">Birthday</option>
-                            <option value="corporate">Corporate</option>
-                            <option value="romantic">Romantic Dinner</option>
-                        </select>
-                    </div>
-                    
-                  
-                    
-                    <button type="submit" class="submit-btn">Book Reservation</button>
-                </form>
-            </div>
-          </div>
+    
           
           <!-- Right Side - Testimonials -->
           <div class="testimonials-section" style="margin-top: 60px;">
@@ -312,9 +243,12 @@ Less waiting time."</p>
   </div>
 </footer>
 
-<a class="whatsapp-btn" href="https://wa.me/+91 (80) 41711118 " target="_blank" data-fallback="WA">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+<a class="whatsapp-btn"
+   href="https://wa.me/919606257272?text=Hi%20team%2C%20I%27d%20like%20to%20enquire."
+   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+</a>
+
   <a class="phone-btn" href="tel:+91 (80) 41711118 " target="_blank" data-fallback="Call">
     <i class="fa-solid fa-phone"></i>
   </a>
